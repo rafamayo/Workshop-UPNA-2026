@@ -1,0 +1,641 @@
+bundle = {
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-1",
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          { "family": "Taylor", "given": ["David"] }
+        ],
+        "gender": "male",
+        "birthDate": "1981-02-23"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-1",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:30:00Z",
+        "valueQuantity": { "value": 71, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-2",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:31:00Z",
+        "valueQuantity": { "value": 73, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-3",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:32:00Z",
+        "valueQuantity": { "value": 75, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-4",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:33:00Z",
+        "valueQuantity": { "value": 74, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-5",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:34:00Z",
+        "valueQuantity": { "value": 79, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-6",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:35:00Z",
+        "valueQuantity": { "value": 81, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-7",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:36:00Z",
+        "valueQuantity": { "value": 83, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-8",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:37:00Z",
+        "valueQuantity": { "value": 82, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-9",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:38:00Z",
+        "valueQuantity": { "value": 87, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-hr-10",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8867-4", "display": "Heart rate" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:39:00Z",
+        "valueQuantity": { "value": 89, "unit": "bpm" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-1",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:30:00Z",
+        "valueQuantity": { "value": 36.4, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-2",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:31:00Z",
+        "valueQuantity": { "value": 36.8, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-3",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:32:00Z",
+        "valueQuantity": { "value": 37.0, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-4",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:33:00Z",
+        "valueQuantity": { "value": 37.2, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-5",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:34:00Z",
+        "valueQuantity": { "value": 37.4, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-6",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:35:00Z",
+        "valueQuantity": { "value": 37.3, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-7",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:36:00Z",
+        "valueQuantity": { "value": 37.6, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-8",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:37:00Z",
+        "valueQuantity": { "value": 37.8, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-9",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:38:00Z",
+        "valueQuantity": { "value": 38.0, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-temp-10",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "8310-5", "display": "Body temperature" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:39:00Z",
+        "valueQuantity": { "value": 38.2, "unit": "°C" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-1",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:30:00Z",
+        "valueQuantity": { "value": 98, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-2",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:31:00Z",
+        "valueQuantity": { "value": 97, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-3",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:32:00Z",
+        "valueQuantity": { "value": 96, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-4",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:33:00Z",
+        "valueQuantity": { "value": 95, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-5",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:34:00Z",
+        "valueQuantity": { "value": 94, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-6",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:35:00Z",
+        "valueQuantity": { "value": 93, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-7",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:36:00Z",
+        "valueQuantity": { "value": 92, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-8",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:37:00Z",
+        "valueQuantity": { "value": 91, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-9",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:38:00Z",
+        "valueQuantity": { "value": 90, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-spo2-10",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "59408-5", "display": "Oxygen saturation in Arterial blood by Pulse oximetry" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:39:00Z",
+        "valueQuantity": { "value": 89, "unit": "%" }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:dr-1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "status": "final",
+        "code": {
+          "coding": [
+            { "system": "http://loinc.org", "code": "11502-2", "display": "Laboratory report" }
+          ]
+        },
+        "subject": { "reference": "urn:uuid:patient-1" },
+        "effectiveDateTime": "2026-03-24T08:40:00Z",
+        "result": [
+          { "reference": "urn:uuid:obs-hr-1" },
+          { "reference": "urn:uuid:obs-hr-2" },
+          { "reference": "urn:uuid:obs-hr-3" },
+          { "reference": "urn:uuid:obs-hr-4" },
+          { "reference": "urn:uuid:obs-hr-5" },
+          { "reference": "urn:uuid:obs-hr-6" },
+          { "reference": "urn:uuid:obs-hr-7" },
+          { "reference": "urn:uuid:obs-hr-8" },
+          { "reference": "urn:uuid:obs-hr-9" },
+          { "reference": "urn:uuid:obs-hr-10" },
+          { "reference": "urn:uuid:obs-temp-1" },
+          { "reference": "urn:uuid:obs-temp-2" },
+          { "reference": "urn:uuid:obs-temp-3" },
+          { "reference": "urn:uuid:obs-temp-4" },
+          { "reference": "urn:uuid:obs-temp-5" },
+          { "reference": "urn:uuid:obs-temp-6" },
+          { "reference": "urn:uuid:obs-temp-7" },
+          { "reference": "urn:uuid:obs-temp-8" },
+          { "reference": "urn:uuid:obs-temp-9" },
+          { "reference": "urn:uuid:obs-temp-10" },
+          { "reference": "urn:uuid:obs-spo2-1" },
+          { "reference": "urn:uuid:obs-spo2-2" },
+          { "reference": "urn:uuid:obs-spo2-3" },
+          { "reference": "urn:uuid:obs-spo2-4" },
+          { "reference": "urn:uuid:obs-spo2-5" },
+          { "reference": "urn:uuid:obs-spo2-6" },
+          { "reference": "urn:uuid:obs-spo2-7" },
+          { "reference": "urn:uuid:obs-spo2-8" },
+          { "reference": "urn:uuid:obs-spo2-9" },
+          { "reference": "urn:uuid:obs-spo2-10" }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "DiagnosticReport"
+      }
+    }
+  ]
+}

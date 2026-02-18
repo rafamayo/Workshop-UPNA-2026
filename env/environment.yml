@@ -1,0 +1,10 @@
+name: fhir-workshop
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - requests
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn

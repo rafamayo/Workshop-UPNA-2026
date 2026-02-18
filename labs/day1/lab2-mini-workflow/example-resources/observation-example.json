@@ -1,0 +1,21 @@
+{
+  "resourceType": "Observation",
+  "id": "example-observation-1",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-patient-1"
+  },
+  "valueQuantity": {
+    "value": 75,
+    "unit": "bpm"
+  }
+}

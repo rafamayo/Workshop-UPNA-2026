@@ -1,0 +1,14 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "example-report-1",
+  "status": "final",
+  "subject": {
+    "reference": "Patient/example-patient-1"
+  },
+  "effectiveDateTime": "2025-03-20T10:00:00Z",
+  "result": [
+    {
+      "reference": "Observation/example-observation-1"
+    }
+  ]
+}

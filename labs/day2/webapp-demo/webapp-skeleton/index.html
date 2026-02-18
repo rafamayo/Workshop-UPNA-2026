@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>FHIR Web App Demo</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+    <header>
+        <h1>FHIR Web App Demo</h1>
+        <p>UPNA Workshop 2026</p>
+    </header>
+
+    <section id="controls">
+        <label for="patientId">Patient ID:</label>
+        <input id="patientId" type="text" placeholder="e.g. 12345"/>
+
+        <button id="loadBtn">Load Patient</button>
+    </section>
+
+    <section id="output">
+        <h2>Output</h2>
+        <pre id="resultBox">Waiting for input...</pre>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+### FHIR Server Base URL
+@base = https://hapi.fhir.org/baseR4
+
+### 1. Check server metadata
+GET {{base}}/metadata
+Accept: application/fhir+json
+
+
+### 2. Create a Patient (POST)
+POST {{base}}/Patient
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "Patient",
+  "name": [{ "family": "Doe", "given": ["Alice"] }],
+  "gender": "female",
+  "birthDate": "1985-05-05"
+}
+
+### After running this, copy the returned ID below:
+### @patientId = <REPLACE_WITH_ID>
+
+
+### 3. Create an Observation linked to the Patient
+POST {{base}}/Observation
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "Observation",
+  "status": "final",
+  "code": {
+    "coding": [{
+      "system": "http://loinc.org",
+      "code": "8867-4"
+    }]
+  },
+  "subject": { "reference": "Patient/{{patientId}}" },
+  "valueQuantity": { "value": 72, "unit": "bpm" }
+}
+
+
+### 4. Retrieve Observations for this Patient
+GET {{base}}/Observation?subject=Patient/{{patientId}}
+Accept: application/fhir+json
+
+
+### 5. Retrieve all heart-rate Observations (LOINC 8867-4)
+GET {{base}}/Observation?code=8867-4
+Accept: application/fhir+json
+
+
+### 6. Try an invalid Patient reference (for experimentation)
+POST {{base}}/Observation
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "Observation",
+  "status": "final",
+  "code": {
+    "coding": [{
+      "system": "http://loinc.org",
+      "code": "8867-4"
+    }]
+  },
+  "subject": { "reference": "Patient/DOES-NOT-EXIST" },
+  "valueQuantity": { "value": 99, "unit": "bpm" }
+}

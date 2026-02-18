@@ -1,0 +1,49 @@
+/* ------------------------------------------------------
+   FHIR Web App Demo - UPNA Workshop 2026
+------------------------------------------------------ */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#controls {
+    margin-bottom: 1.5rem;
+}
+
+#controls input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#controls button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background-color: #0077cc;
+    color: white;
+}
+
+#output pre {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}

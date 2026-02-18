@@ -1,0 +1,8 @@
+{
+    "python.defaultInterpreterPath": "env/bin/python",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": false,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.interactiveWindowMode": "perFile",
+    "editor.wordWrap": "on"
+}
