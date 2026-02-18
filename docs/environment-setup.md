@@ -74,7 +74,7 @@ Download from:
 To clone the repository:
 
 ```bash
-git clone <REPOSITORY_URL>
+git clone https://github.com/rafamayo/Workshop-UPNA-2026.git
 ```
 
 Then navigate into the folder:
