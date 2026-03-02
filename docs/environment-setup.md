@@ -140,24 +140,50 @@ Requirements:
 
 * Python 3.10 or newer
 * pip installed
+* You are in the repository folder
 
-Install:
+1. Create a vitual environment
+```bash
+python -m venv ./myvenv 
+```
+
+2. Activate the virtual environment
+```bash
+source ./myvenv/bin/activate
+```
+
+4. Install the required modules:
 
 ```bash
 pip install jupyter requests pandas matplotlib
 ```
 
-Start Jupyter:
+5. Start Jupyter:
 
 ```bash
 jupyter lab
 ```
 
-Open the workshop notebooks and run:
+6. Open the workshop notebooks and run:
 
 ```python
 print("Local Jupyter works!")
 ```
+
+**Caution:** Every time you want to work on the notebooks you need to
+
+1. Activate the virtual environment
+```bash
+source ./myvenv/bin/activate
+```
+
+2. Start Jupyter:
+
+```bash
+jupyter lab
+```
+
+### Using a vitual environment makes sure that your project doesn't mess with the rest of the system!
 
 ---
 
