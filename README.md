@@ -87,7 +87,7 @@ slides/               → day 1 and day 2 slide decks
 
 ## Contact
 
-Workshop author and instructor:
-**Prof. Dr. Rafael Mayoral Malmström**
-Hochschule Kempten – University of Applied Sciences
+Workshop author and instructor:<br>
+**Prof. Dr. Rafael Mayoral Malmström**<br>
+Hochschule Kempten – University of Applied Sciences<br>
 Faculty of Computer Science / Medical Informatics
