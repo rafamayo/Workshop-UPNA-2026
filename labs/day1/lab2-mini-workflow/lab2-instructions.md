@@ -33,7 +33,9 @@ Choose two vital signs, for example:
 
 * Heart rate (LOINC `8867-4`)
 * Body temperature (LOINC `8310-5`)
-* Respiration rate (LOINC `9279-1`)
+* Respiratory rate (LOINC `9279-1`)
+* Oxygen saturation in Arterial blood by Pulse oximetry (LOINC `59408-5`)
+* Glucose [Mass/volume] in Blood (LOINC `2339-0`)
 
 **Tasks:**
 
